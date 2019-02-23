@@ -13,7 +13,7 @@ provider:
           - .execute-api.
           - Ref: AWS::Region
           - .amazonaws.com/
-          - ${self:provider.stage}\
+          - ${self:provider.stage}/
 
 functions:
   get:
