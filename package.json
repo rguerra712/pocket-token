@@ -1,0 +1,24 @@
+{
+  "name": "pocket-token",
+  "version": "1.0.0",
+  "description": "Obtain a pocket access token given a consumer key",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rguerra712/pocket-token.git"
+  },
+  "keywords": [],
+  "author": "R. Stephen Guerra",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rguerra712/pocket-token/issues"
+  },
+  "homepage": "https://github.com/rguerra712/pocket-token#readme"
+}
