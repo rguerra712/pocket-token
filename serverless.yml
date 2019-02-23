@@ -1,0 +1,24 @@
+service: pocket-token
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  environment:
+    CONSUMER_KEY: ${file(./serverless.env.yml):CONSUMER_KEY}
+    APIGATEWAY_URL:
+      Fn::Join:
+        - ''
+        - - https://
+          - Ref: ApiGatewayRestApi
+          - .execute-api.
+          - Ref: AWS::Region
+          - .amazonaws.com/
+          - ${self:provider.stage}\
+
+functions:
+  get:
+    handler: handler.get
+    events:
+      - http:
+          path: /
+          method: get
